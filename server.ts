@@ -9,9 +9,6 @@ import nodemailer from 'nodemailer';
 
 dotenv.config();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 async function startServer() {
   const app = express();
   const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
@@ -185,7 +182,7 @@ async function startServer() {
   });
 
   // Backend Persistent Database Store (Disk-backed store for registered users & OTPs)
-  const USERS_DB_FILE = path.join(__dirname, 'infra', 'users_db.json');
+  const USERS_DB_FILE = path.join(process.cwd(), 'infra', 'users_db.json');
 
   function saveUsersDbToDisk(map: Map<string, any>) {
     try {

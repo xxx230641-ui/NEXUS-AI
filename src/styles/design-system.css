@@ -4,41 +4,41 @@
 
 :root {
   /* Background Hierarchy */
-  --bg-primary: #0A0F1C;
-  --bg-secondary: #0F1629;
-  --bg-tertiary: #131B2E;
-  --bg-elevated: #1A2342;
-  --bg-overlay: rgba(10, 15, 28, 0.85);
+  --bg-primary: var(--bg-base);
+  --bg-secondary: var(--bg-surface);
+  --bg-tertiary: var(--bg-elevated);
+  --bg-elevated: var(--bg-hover);
+  --bg-overlay: var(--bg-overlay);
 
   /* Accents */
-  --accent-primary: #00D4FF;
-  --accent-secondary: #7B61FF;
-  --accent-success: #00E5A0;
-  --accent-warning: #FFB800;
-  --accent-danger: #FF4757;
-  --accent-info: #3B82F6;
+  --accent-primary: var(--accent);
+  --accent-secondary: var(--accent-secondary);
+  --accent-success: var(--success);
+  --accent-warning: var(--warning);
+  --accent-danger: var(--danger);
+  --accent-info: var(--info);
 
   /* Context Colors */
-  --ctx-professional: #FF6B6B;
-  --ctx-family: #FF8E72;
-  --ctx-learning: #FFD166;
-  --ctx-social: #06D6A0;
-  --ctx-personal: #118AB2;
+  --ctx-professional-glow: var(--ctx-professional);
+  --ctx-family-glow: var(--ctx-family);
+  --ctx-learning-glow: var(--ctx-learning);
+  --ctx-social-glow: var(--ctx-social);
+  --ctx-personal-glow: var(--ctx-personal);
 
   /* Typography Colors */
-  --text-primary: #F0F4F8;
-  --text-secondary: #8B95A8;
-  --text-muted: #4A5568;
-  --text-inverse: #0A0F1C;
+  --text-primary: var(--text-primary);
+  --text-secondary: var(--text-secondary);
+  --text-muted: var(--text-muted);
+  --text-inverse: var(--bg-base);
 
   /* Borders & Shadows */
-  --border-subtle: rgba(255, 255, 255, 0.06);
-  --border-default: rgba(255, 255, 255, 0.1);
-  --border-focus: #00D4FF;
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
-  --shadow-glow: 0 0 20px rgba(0, 212, 255, 0.15);
-  --shadow-purple-glow: 0 0 20px rgba(123, 97, 255, 0.15);
+  --border-subtle: var(--border-subtle);
+  --border-default: var(--border-default);
+  --border-focus: var(--border-focus);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-glow: 0 0 20px rgba(215, 101, 66, 0.15);
+  --shadow-purple-glow: 0 0 20px rgba(66, 117, 138, 0.15);
 
   /* Fonts */
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;

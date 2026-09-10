@@ -1,0 +1,105 @@
+/* NEXUS Digital Twin Platform - Premium Design System tokens */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Background Hierarchy */
+  --bg-primary: #0A0F1C;
+  --bg-secondary: #0F1629;
+  --bg-tertiary: #131B2E;
+  --bg-elevated: #1A2342;
+  --bg-overlay: rgba(10, 15, 28, 0.85);
+
+  /* Accents */
+  --accent-primary: #00D4FF;
+  --accent-secondary: #7B61FF;
+  --accent-success: #00E5A0;
+  --accent-warning: #FFB800;
+  --accent-danger: #FF4757;
+  --accent-info: #3B82F6;
+
+  /* Context Colors */
+  --ctx-professional: #FF6B6B;
+  --ctx-family: #FF8E72;
+  --ctx-learning: #FFD166;
+  --ctx-social: #06D6A0;
+  --ctx-personal: #118AB2;
+
+  /* Typography Colors */
+  --text-primary: #F0F4F8;
+  --text-secondary: #8B95A8;
+  --text-muted: #4A5568;
+  --text-inverse: #0A0F1C;
+
+  /* Borders & Shadows */
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-default: rgba(255, 255, 255, 0.1);
+  --border-focus: #00D4FF;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 20px rgba(0, 212, 255, 0.15);
+  --shadow-purple-glow: 0 0 20px rgba(123, 97, 255, 0.15);
+
+  /* Fonts */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-arabic: 'Cairo', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* RTL Support for Arabic Typography */
+[dir="rtl"] {
+  font-family: var(--font-arabic);
+}
+
+/* Custom Smooth Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-default);
+}
+
+/* Glowing Card Utility */
+.nexus-card-glow {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nexus-card-glow:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.5), 0 0 16px -2px rgba(0, 212, 255, 0.12);
+}
+
+/* Context Badge Glows */
+.context-glow-professional { box-shadow: 0 0 15px rgba(255, 107, 107, 0.25); }
+.context-glow-family { box-shadow: 0 0 15px rgba(255, 142, 114, 0.25); }
+.context-glow-learning { box-shadow: 0 0 15px rgba(255, 209, 102, 0.25); }
+.context-glow-social { box-shadow: 0 0 15px rgba(6, 214, 160, 0.25); }
+
+/* Shimmer animation for loading states */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer-bg {
+  background: linear-gradient(90deg, var(--bg-secondary) 25%, var(--bg-tertiary) 50%, var(--bg-secondary) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite;
+}

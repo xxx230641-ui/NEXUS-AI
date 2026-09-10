@@ -1,0 +1,6 @@
+{
+  "name": "NEXUS Digital Twin",
+  "description": "Context-aware digital twin platform building dynamic context graphs from multi-app integrations and driving context predictions, pre-meeting briefings, and focus modes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

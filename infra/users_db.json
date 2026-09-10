@@ -1,0 +1,31 @@
+{
+  "ahmed.nexus@gmail.com": {
+    "uid": "usr-google-existing-01",
+    "email": "ahmed.nexus@gmail.com",
+    "name": "أحمد النكسوس",
+    "password": "password123",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+    "authMethod": "manual",
+    "createdAt": "2026-07-09T08:36:18.394Z"
+  },
+  "xxx230641@gmail.com": {
+    "uid": "usr-owner-01",
+    "email": "xxx230641@gmail.com",
+    "name": "مالك التطبيق (Administrator)",
+    "password": "password123",
+    "role": "owner",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+    "authMethod": "manual",
+    "createdAt": "2026-08-08T08:47:33.761Z"
+  },
+  "r773977301@gmail.com": {
+    "uid": "usr-registered-02",
+    "email": "r773977301@gmail.com",
+    "name": "مستخدم النظام (r773977301)",
+    "password": "password123",
+    "role": "user",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+    "authMethod": "manual",
+    "createdAt": "2026-08-08T09:00:00.000Z"
+  }
+}

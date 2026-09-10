@@ -1,0 +1,77 @@
+// NEXUS Platform Prisma Schema
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id            String   @id @default(uuid())
+  email         String   @unique
+  name          String?
+  avatarUrl     String?
+  encryptionKey String?  // Zero-knowledge user key (ciphertext)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  integrations  Integration[]
+  contexts      Context[]
+  notifications Notification[]
+
+  @@map("users")
+}
+
+model Integration {
+  id           String   @id @default(uuid())
+  userId       String
+  provider     String   // gmail, calendar, slack, notion, whatsapp
+  accessToken  String   // Encrypted (AES-256)
+  refreshToken String?  // Encrypted (AES-256)
+  expiresAt    DateTime?
+  isActive     Boolean  @default(true)
+  lastSyncAt   DateTime?
+  metadata     Json?
+  
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@unique([userId, provider])
+  @@map("integrations")
+}
+
+model Context {
+  id              String   @id @default(uuid())
+  userId          String
+  type            String   // Professional, Family, Learning, Social
+  name            String
+  confidenceScore Float?
+  isActive        Boolean  @default(false)
+  startedAt       DateTime?
+  endedAt         DateTime?
+  
+  user          User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  notifications Notification[]
+
+  @@map("contexts")
+}
+
+model Notification {
+  id          String   @id @default(uuid())
+  userId      String
+  contextId   String?
+  type        String   // CONFLICT, BRIEFING, FOCUS, DEADLINE
+  severity    String   // CRITICAL, IMPORTANT, INFO
+  title       String
+  description String?
+  actionUrl   String?
+  isRead      Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  
+  user    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  context Context? @relation(fields: [contextId], references: [id])
+  
+  @@index([userId, isRead])
+  @@map("notifications")
+}

@@ -1,0 +1,192 @@
+{
+  "app": {
+    "name": "NEXUS",
+    "tagline": "Intelligent Digital Twin",
+    "description": "Context engine and predictive intelligence platform"
+  },
+  "nav": {
+    "home": "Home",
+    "graph": "Context Graph",
+    "notifications": "Notifications",
+    "profile": "Profile",
+    "settings": "Settings",
+    "help": "How to Use"
+  },
+  "contexts": {
+    "professional": "Professional",
+    "family": "Family",
+    "learning": "Learning",
+    "social": "Social",
+    "personal": "Personal"
+  },
+  "actions": {
+    "save": "Save Changes",
+    "cancel": "Cancel",
+    "edit": "Edit Profile",
+    "connect": "Connect",
+    "disconnect": "Disconnect",
+    "logout": "Log Out",
+    "changePassword": "Change Password",
+    "logoutAllDevices": "Sign out from all devices",
+    "manageIntegrations": "Manage Integrations",
+    "startTour": "Start Interactive Tour",
+    "next": "Next",
+    "back": "Back",
+    "start": "Let's Begin",
+    "viewDashboard": "View Dashboard",
+    "switchContext": "Switch Context",
+    "resolveConflict": "Resolve Conflict",
+    "dismiss": "Dismiss",
+    "search": "Search...",
+    "filter": "Filter"
+  },
+  "profile": {
+    "title": "Profile & Account",
+    "subtitle": "Manage your personal information, integrations, and security settings",
+    "personalInfo": "Personal Information",
+    "name": "Ahmed Al-Muhammadi",
+    "email": "ahmed.nexus@example.com",
+    "role": "Project Manager & AI Engineer",
+    "contextStats": "Context Statistics",
+    "activeContexts": "Active Contexts",
+    "connectedApps": "Connected Apps",
+    "weeklyNotifications": "Notifications This Week",
+    "avgFocusIndex": "Average Focus Index",
+    "integrations": "Integrations",
+    "statusConnected": "Connected ✓",
+    "statusDisconnected": "Disconnected",
+    "security": "Security & Protection",
+    "encryptionStatus": "Encryption: Active 🔒 (AES-256)",
+    "lastLogin": "Last Login: 2 hours ago",
+    "connectedDevices": "Connected Devices: 2 active",
+    "activity": "Activity & Performance",
+    "activityToday": "Today: 5 alerts, 2 meetings",
+    "activityThisWeek": "This Week: 23 alerts, 8 meetings"
+  },
+  "auth": {
+    "loginTitle": "Sign in to NEXUS",
+    "loginSubtitle": "Choose your sign-in method to continue to your Digital Twin",
+    "googleLogin": "Sign in with Google",
+    "manualLogin": "Manual Sign-In (Email & Password)",
+    "or": "OR",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "name@example.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "••••••••",
+    "loginBtn": "Sign In",
+    "signUpBtn": "Create New Account",
+    "verifyingEmail": "Checking email validity & status...",
+    "fakeEmailError": "Sorry, this email address does not exist or is fake. Please use a real active email address.",
+    "selectGoogleAccount": "Select Google Account to Continue",
+    "googleAccountSelected": "Successfully signed in with Google Account"
+  },
+  "onboarding": {
+    "step1Title": "Welcome to NEXUS",
+    "step1Desc": "Your intelligent digital twin that understands your life aspects and aligns your priorities automatically.",
+    "step2Title": "Connect Your Apps",
+    "step2Desc": "Connect your Google account to sync calendars, emails, and tasks seamlessly.",
+    "step2GoogleHint": "Google (Start with this only)",
+    "step2OptionalHint": "Optional later",
+    "step3Title": "What are your life aspects?",
+    "step3Desc": "Select daily contexts to enable automated inference and minimize distraction.",
+    "step4Title": "You're All Set!",
+    "step4Desc": "NEXUS analyzed your priorities and unified your context ecosystem into a single dashboard."
+  },
+  "help": {
+    "title": "How to Use NEXUS",
+    "subtitle": "Your complete guide to understanding and controlling your digital twin",
+    "whatIsNexus": "What is NEXUS?",
+    "videoDesc": "Interactive walkthrough highlighting AI inference and smart contextual routing",
+    "cards": {
+      "graphTitle": "Context Graph",
+      "graphDesc": "Visualize real-time connections between meetings, tasks, people, and locations.",
+      "predictionsTitle": "Smart Predictions",
+      "predictionsDesc": "Automated briefings and predicted needs before starting meetings or travel.",
+      "focusTitle": "Focus Mode",
+      "focusDesc": "Automatic notification silencing based on your physical location and schedule."
+    },
+    "faqTitle": "Frequently Asked Questions",
+    "faq": [
+      {
+        "q": "Is my data secure and private?",
+        "a": "Yes, NEXUS uses full end-to-end encryption (AES-256) and never shares data with third parties."
+      },
+      {
+        "q": "How do I connect a new app like Notion or Slack?",
+        "a": "Navigate to Profile → Integrations, and click 'Connect' next to the desired service."
+      },
+      {
+        "q": "What is 'Context' and how is it determined?",
+        "a": "Context represents your active environment (Work, Family, Learning) inferred from calendar, time, and location."
+      },
+      {
+        "q": "How can I permanently delete my data?",
+        "a": "In Settings → Privacy, you can export your data or click 'Purge All Data'."
+      }
+    ],
+    "tourTitle": "Interactive Tour",
+    "tourDesc": "Click to start a step-by-step visual tour explaining every interface control"
+  },
+  "dashboard": {
+    "title": "Digital Twin Dashboard",
+    "activeContext": "Active Context",
+    "confidence": "Confidence",
+    "aiReasoning": "AI Intent Analysis",
+    "conflictAlert": "Potential Context Conflict",
+    "conflictMessage": "Family event at 6:00 PM overlaps with urgent project delivery deadline.",
+    "briefingTitle": "Daily Predictive Briefing",
+    "briefingText": "Based on your pattern, we recommend focusing on professional tasks until 4:00 PM, then auto-transitioning to family context.",
+    "liveSignals": "Live Signal Feed",
+    "priorityTasks": "Priority Tasks",
+    "focusModeStatus": "Focus Mode Status"
+  },
+  "settings": {
+    "title": "General Settings",
+    "appearance": "Appearance & Theme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "language": "Language",
+    "arabic": "العربية (RTL)",
+    "english": "English (LTR)",
+    "notifications": "Notification Preferences",
+    "privacy": "Privacy & Security",
+    "helpCenter": "Help Center"
+  },
+  "aiAssistant": {
+    "title": "NEXUS AI Assistant",
+    "subtitle": "Interactive Digital Twin powered by NEXUS AI",
+    "placeholder": "Ask anything about your schedules, contexts, or in-app help...",
+    "send": "Send",
+    "thinking": "NEXUS is thinking & analyzing...",
+    "clear": "Clear Chat",
+    "quickPromptsTitle": "Suggested Quick Prompts:",
+    "prompts": {
+      "priorities": "What are my top priorities and tasks today?",
+      "conflicts": "Are there any schedule conflicts detected?",
+      "howToUse": "How do I make the best use of NEXUS Digital Twin?",
+      "summarizeApps": "Summarize the state of my connected mobile apps"
+    },
+    "voicePlay": "Read Aloud",
+    "copy": "Copy",
+    "copied": "Copied!"
+  },
+  "integrationsPage": {
+    "title": "Phone Apps & Integrations",
+    "subtitle": "Connect all mobile phone apps and device OS to your Digital Twin",
+    "all": "All Apps",
+    "messaging": "Messaging & Social",
+    "work": "Work & Productivity",
+    "system": "Phone System & Data",
+    "health": "Health & Lifestyle",
+    "searchPlaceholder": "Search phone app to connect...",
+    "syncNow": "Sync Now",
+    "syncedJustNow": "Synced successfully ✓"
+  },
+  "notificationsPage": {
+    "title": "Smart Notifications Hub",
+    "all": "All",
+    "unread": "Unread",
+    "urgent": "Urgent",
+    "markAllRead": "Mark all as read"
+  }
+}
